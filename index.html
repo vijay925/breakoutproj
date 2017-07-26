@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
-<body>
+<head>
+  <script src="js/jQuery.js"></script>
 
-<h1>First Google Map</h1>
+  <!-- More on helper.js in the class -->
+  <script src="js/helper.js"></script>
 
-
-<!DOCTYPE html>
+  <!--
+  The next line tells the browser where to download the JavaScript file you'll be
+  writing. In resumeBuilder.js, you'll be writing code that builds the resume
+  dynamically when this website, index.html, is opened.
+  -->
+  <script src="js/resumeBuilder.js"></script>
+</head>
 <html>
 <body>
 
@@ -22,6 +28,8 @@ var mapOptions = {
 }
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
+
+
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2VGdCYt2Cuj2YSjFlaClWpvH2KF4DwoE&callback=initMap"
